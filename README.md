@@ -27,7 +27,7 @@ The goal of this project is to demonstrate the ability to:
 ## 2. Animation Control & Reset
 
 - CSS animations are reliably restarted using a forced reflow technique: - void toast.offsetWidth;
-  This ensures animations run correctly on repeated interactions — a common pitfall in frontend development.
+  This ensures animations run correctly on repeated interactions. A common pitfall in frontend development.
 
 ## 3. Clean Architecture
 
@@ -50,6 +50,7 @@ The goal of this project is to demonstrate the ability to:
 - Attention to UX details and edge cases
 - Comfort working without frameworks when needed
 
-## Author 
+## Author
+
 - Abdelrahman github link: (https://github.com/Abdelrahman-SE/)
-- live preview: 
+- live preview: https://abdelrahman-se.github.io/custom-toast-notification-GFG-project-1/
