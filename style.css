@@ -73,6 +73,7 @@ button[data-type="warning"]:hover {
 .toast {
   position: fixed;
   top: 50%;
+  opacity: 0;
   left: 0px;
   max-width: 300px;
   padding: 10px;
@@ -108,28 +109,28 @@ button[data-type="warning"]:hover {
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(-100%);
   }
   80% {
-    transform: translateX(280px);
+    transform: translateX(20%);
   }
   100% {
     opacity: 1;
-    transform: translateX(250px);
+    transform: translateX(10%);
   }
 }
 @keyframes slideOutFromRight {
   0% {
     opacity: 1;
-    transform: translateX(250px);
+    transform: translateX(10%);
   }
   80% {
     opacity: 0.5;
-    transform: translateX(280px);
+    transform: translateX(20%);
   }
   100% {
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(-100%);
   }
 }
 @keyframes toastProgress {
@@ -138,5 +139,10 @@ button[data-type="warning"]:hover {
   }
   100% {
     width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .toast {
+    top: 70%;
   }
 }
